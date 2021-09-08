@@ -1,0 +1,5 @@
+<span
+	class="cycleable"
+	js-items="welcome,bienvenue,witamy,ようこそ, 欢迎, أهلا بك"
+	js-timeout="3500"
+	js-delay="3500"></span> 
