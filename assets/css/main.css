@@ -1,6 +1,8 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+@keyframes in{from{top:-25px;opacity:0}to{opacity:1;top:0}}@keyframes out{from{top:0;opacity:1}to{opacity:0;top:25px}}.cycleable{position:relative;display:inline-block;transition:width .5s}.in{animation-name:in;animation-fill-mode:forwards;animation-duration:1s;position:absolute;left:0;transform:translateY(-78%);white-space:nowrap}.out{animation-name:out;animation-fill-mode:forwards;animation-duration:1s;position:absolute;left:0;transform:translateY(-78%);white-space:nowrap}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -1153,7 +1155,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/image.png");
+			background-image: url("../../assets/images/image.png");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1654,3 +1656,49 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+		  
+@keyframes in {
+    from {
+        top: -25px;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 0px;
+    }
+}
+@keyframes out {
+    from {
+        top: 0;
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        top: 25px;
+    }
+}
+.cycleable {
+    position: relative;
+    display: inline-block;
+    transition: width 500ms;
+}
+.in {
+    animation-name: in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    position: absolute;
+    left: 0px;
+    transform: translateY(-78%);
+    white-space: nowrap;
+}
+.out {
+    animation-name: out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    position: absolute;
+    left: 0px;
+    transform: translateY(-78%);
+    white-space: nowrap;
+}
